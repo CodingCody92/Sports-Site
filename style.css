@@ -191,16 +191,31 @@
     padding: 5px;
     color: #fff;
     border: 1px solid rgb(34, 34, 34);
-    
+}
+
+#arrow:hover {
+  background: rgb(24, 219, 24);
+  transition: var(--transition);
+}
+
+#arrow-bb {
+    margin: 10px;
+    background: rgb(238, 83, 22);
+    padding: 5px;
+    color: #fff;
+    border: 1px solid rgb(34, 34, 34);
+    display: none;
 }
 
 #author {
     color: rgba(12, 12, 12, 0.5);
 }
 
-#arrow-a {
+#arrow-a, #arrow-b {
     text-decoration: none;
 }
+
+
 
 .home-alt {
     background: url(https://boston.cbslocal.com/wp-content/uploads/sites/3859903/2021/09/tom-brady.jpg?w=1024);
@@ -233,6 +248,104 @@
     color: rgba(12, 12, 12, 0.5);
 }
 
+.top-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.top-news a {
+    margin: 1.5rem;
+}
+
+.top-news .today {
+    background: rgb(24, 219, 24);
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.border {
+    margin: 12px;
+    font-size: 1.55rem;
+}
+
+.report-link {
+    text-decoration: none;
+    color: rgb(6, 8, 8);
+}
+
+.top-news .report {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.top-news .report:hover {
+    color: rgb(24, 219, 24);
+}
+
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.trend-container {
+    margin: 1rem;
+    margin-top: 1rem;
+    background: rgb(5, 5, 5);
+    padding: 5rem;
+}
+
+.trend-container h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.trending h3 {
+    font-size: 2rem;
+}
+
+.trending {
+    width: 600px;
+    height: 425px;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    text-align: center;
+    margin: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px 1px rgb(153, 153, 153);
+}
+
+.trending .trend-link {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+
+.trending .trend-link:hover {
+    color: rgb(24, 70, 219);
+}
+
+.trending .alert, .right, .fire {
+    color: rgb(245, 0, 0);
+}
+
+.img-trend {
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+}
 
 
 @media(max-width:700px) {
@@ -275,5 +388,65 @@
 
     .home h2 {
         font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 980px) {
+    .top-news {
+        flex-wrap: wrap;
+    }
+
+    .ads img {
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 630px) {
+    .ads img {
+        max-width: 450px;
+    }
+}
+
+@media(max-width: 455px) {
+    .ads img {
+        max-width: 350px;
+    }
+}
+
+@media(max-width: 350px) {
+    .ads img {
+        max-width: 200px;
+    }
+}
+
+@media(max-width: 560px) {
+    .border {
+        display: none;
+    }
+}
+
+@media(max-width: 1190px) {
+    .new {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 400px) {
+    .trending {
+        width: 300px;
+        height: 325px;
+    }
+
+    .img-trend {
+        width: 200px;
+        height: 200px;
+    }
+
+    .trend-container h1 {
+        font-size: 2rem;
+    }
+
+    .trending h3 {
+        font-size: 1rem;
     }
 }
