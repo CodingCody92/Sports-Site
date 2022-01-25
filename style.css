@@ -431,7 +431,7 @@
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 600px) {
     .trending {
         width: 300px;
         height: 325px;
